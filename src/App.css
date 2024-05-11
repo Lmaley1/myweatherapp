@@ -1,42 +1,45 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Font styling for the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0; /* Set a light gray background color for the body */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for the main container */
+.app {
+  width: 600px;
+  margin: 50px auto; /* Center the container vertically and horizontally */
+  background-color: rgb(137, 183, 229);
+  padding: 20px; /* Increase padding for better spacing */
+  border-radius: 26px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+  position: relative; /* Add relative positioning */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Hover effect for the container */
+.app:hover {
+  transform: scale(1.05); /* Scale up the container on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
-.card {
-  padding: 2em;
+/* Styling for buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(137, 183, 229);
+  border: 2px solid rgb(137, 183, 229);
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+/* Hover effect for buttons */
+.button:hover {
+  background-color: rgb(137, 183, 229);
+  color: #ffffff;
 }
